@@ -17,7 +17,7 @@ jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
-    environment: cicd-test
+    environment: develop
 
     steps:
       - name: Checkout
