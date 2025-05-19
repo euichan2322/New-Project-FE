@@ -3,7 +3,7 @@
 import Flex from "@/components/common/shared/layout/Flex";
 import Text from "@/components/common/shared/ui/Text";
 import Image from "next/image";
-import Kakao_Logo from "@/Kakao_Logo.svg";
+import Kakao_Logo from "@/icons/Kakao_Logo.svg";
 import Button from "@/components/common/shared/ui/Button";
 import useKakaoLogin from "@/hooks/login/useKakaoLogin";
 

@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -19,12 +23,37 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*", "./public/*"],
-      "@shared/*": ["./src/components/common/shared/*"],
-      "@pages/*": ["./src/components/features/pages/*"],
-      "@entities/*": ["./src/components/common/entities/*"]
+      "@/*": [
+        "./src/*",
+        "./public/*"
+      ],
+      "@shared/*": [
+        "./src/components/common/shared/*"
+      ],
+      "@pages/*": [
+        "./src/components/features/pages/*"
+      ],
+      "@api/*": [
+        "./src/api/*"
+      ],
+      "@entities/*": [
+        "./src/components/common/entities/*"
+      ],
+      "@hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@types/*": [
+        "./src/types/*"
+      ]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

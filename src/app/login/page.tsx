@@ -1,13 +1,5 @@
-import Spacing from "@shared/layout/Spacing";
-import LoginButtonSection from "@pages/LoginButtonSection";
-import LoginTitleSection from "@pages/LoginTitleSection";
+import LoginBridge from "@/components/features/widgets/LoginBridge";
 
 export default function LoginPage() {
-  return (
-    <div className="px-4 pt-24">
-      <LoginTitleSection />
-      <Spacing size={16} />
-      <LoginButtonSection />
-    </div>
-  );
+  return <LoginBridge />;
 }

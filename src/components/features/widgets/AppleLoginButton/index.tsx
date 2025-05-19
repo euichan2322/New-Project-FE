@@ -1,7 +1,7 @@
 import Flex from "@/components/common/shared/layout/Flex";
 import Text from "@/components/common/shared/ui/Text";
 import Image from "next/image";
-import Apple_Logo from "@/Apple_Logo.svg";
+import Apple_Logo from "@/icons/Apple_Logo.svg";
 import Button from "@/components/common/shared/ui/Button";
 
 export default function AppleLoginButton() {

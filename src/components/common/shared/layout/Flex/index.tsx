@@ -1,4 +1,4 @@
-import { SizeNumberType, SizeType } from "@/type/css/height";
+import { SizeNumberType, SizeType } from "@/types/css/height";
 import { cn } from "@/utils/cn";
 
 interface FlexProps {

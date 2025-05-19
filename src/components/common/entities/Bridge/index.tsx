@@ -3,7 +3,7 @@
 import type {
   MessageEventRequestData,
   MessageEventResponseData,
-} from "@/type/bridge";
+} from "@/types/bridge";
 import { useEffect } from "react";
 
 interface BridgeProps {

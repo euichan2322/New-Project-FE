@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import Star from "@/Star.svg";
-import Login_Logo from "@/Login_Logo.svg";
+import Star from "@/icons/Star.svg";
+import Login_Logo from "@/icons/Login_Logo.svg";
 
 import Flex from "@shared/layout/Flex";
 import Text from "@shared/ui/Text";

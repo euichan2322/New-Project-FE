@@ -1,6 +1,10 @@
-// import SpinnerSection from "@/components/features/pages/social-login-loading/SpinnerSection";
+import TokenProcessingSection from "@/components/features/pages/social-login-loading/TokenProcessingSection";
 import { Suspense } from "react";
 
 export default function SocialLoginLoadingPage() {
-  return <Suspense>{/* <SpinnerSection /> */}</Suspense>;
+  return (
+    <Suspense>
+      <TokenProcessingSection />
+    </Suspense>
+  );
 }
