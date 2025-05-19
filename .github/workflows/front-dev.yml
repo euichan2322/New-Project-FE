@@ -3,7 +3,7 @@ name: Deploy to Amazon ECS
 on:
   push:
     branches:
-      - devlop
+      - cicd-test
 
 env:
   AWS_REGION: ap-northeast-2
@@ -17,15 +17,9 @@ jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
-    environment: develop
+    environment: cicd-test
 
     steps:
-      - name: Send Slack start_message
-        run: |
-          curl -X POST -H 'Content-type: application/json' \
-          --data '{"text":"✅ develop 브랜치에 코드가 push 되었습니다. 프론트 배포를 시작합니다!"}' \
-          ${{ secrets.SLACK_WEBHOOK_URL }}
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -68,9 +62,3 @@ jobs:
           service: ${{ env.ECS_SERVICE }}
           cluster: ${{ env.ECS_CLUSTER }}
           wait-for-service-stability: true
-
-      - name: Send Slack complete_message
-        run: |
-          curl -X POST -H 'Content-type: application/json' \
-          --data '{"text":"✅ 프론트 배포가 완료되었습니다!"}' \
-          ${{ secrets.SLACK_WEBHOOK_URL }}          
